@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    width: 75%;
+    width: 70%;
     margin: auto;
 }
 
@@ -32,6 +32,7 @@ body {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 2px;
+    margin-bottom: 24px;
 }
 
 .social-link:hover {
@@ -97,34 +98,35 @@ body {
 
 /* ---------- Containers ---------- */
 
-.socials-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: flex-start;
-}
-
-@media only screen and (max-width: 650px) {
-    .socials-container {
-        visibility: hidden;
-    }
-}
-
 .header-container {
-    height: 224px;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: space-between;
+    margin-top: 64px;
     margin-bottom: 128px;
-}
-
-.header-container .social-link {
-    margin-top: 24px;
 }
 
 @media only screen and (max-width: 650px) {
     .header-container {
         margin-bottom: 64px;
+    }
+}
+
+.title-container {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-start;
+}
+
+.socials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@media only screen and (max-width: 650px) {
+    .header-container .socials-container {
+        visibility: hidden;
     }
 }
 
@@ -180,8 +182,4 @@ body {
     margin-top: 48px;
     display: flex;
     justify-content: space-between;
-}
-
-.footer-container .social-link {
-    margin-bottom: 24px;
 }
