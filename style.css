@@ -10,21 +10,7 @@ body {
     }
 }
 
-/* ---------- Typos ---------- */
-
-.title {
-    color: white;
-    font-size: 64px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-}
-
-.title-highlight {
-    color: #5f85db;
-    font-size: 64px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-}
+/* ---------- Misc ---------- */
 
 .social-link {
     color: white;
@@ -32,7 +18,8 @@ body {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 2px;
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
+    margin-left: 24px;
 }
 
 .social-link:hover {
@@ -40,12 +27,44 @@ body {
     color: black;
 }
 
-.section-header {
+.separator-horizontal{
+    color: #5f85db;
+    background-color: #5f85db;
+    height: 2px;
+    border-width: 0;
+}
+
+.separator-vertical{
+    color: #5f85db;
+    background-color: #5f85db;
+    width: 2px;
+    border-width: 0;
+}
+
+/* ---------- Typos ---------- */
+
+.title {
     color: white;
     font-size: 54px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
-    margin-bottom: 64px;
+}
+
+.title-highlight {
+    color: #5f85db;
+    font-size: 54px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+@media only screen and (max-width: 650px) {
+    .title {
+        font-size: 36px;
+    }
+
+    .title-highlight {
+        font-size: 36px;
+    }
 }
 
 .strong {
@@ -58,11 +77,22 @@ body {
     color: #5f85db;
     font-size: 36px;
     text-decoration: underline;
+    margin: 0;
 }
 
 .strong .social-link:hover {
     background-color: #5f85db;
     color: white;
+}
+
+@media only screen and (max-width: 650px) {
+    .strong {
+        font-size: 18px;
+    }
+
+    .strong .social-link {
+        font-size: 18px;
+    }
 }
 
 .header {
@@ -82,53 +112,48 @@ body {
     margin-bottom: 10px;
 }
 
-.separator-horizontal{
-    color: #5f85db;
-    background-color: #5f85db;
-    height: 2px;
-    border-width: 0;
+@media only screen and (max-width: 650px) {
+    .header {
+        font-size: 24px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
 }
 
-.separator-vertical{
-    color: #5f85db;
-    background-color: #5f85db;
-    width: 2px;
-    border-width: 0;
-}
-
-/* ---------- Containers ---------- */
+/* ---------- Header ---------- */
 
 .header-container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 64px;
-    margin-bottom: 128px;
-}
-
-@media only screen and (max-width: 650px) {
-    .header-container {
-        margin-bottom: 64px;
-    }
+    margin-bottom: 96px;
 }
 
 .title-container {
     display: flex;
-    /* flex-direction: column; */
     align-items: flex-start;
 }
 
 .socials-container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    /* flex-direction: column; */
+    align-items: flex-start;
 }
 
 @media only screen and (max-width: 650px) {
-    .header-container .socials-container {
-        visibility: hidden;
+    .header-container {
+        margin-bottom: 32px;
+    }
+    
+    .title-container {
+        flex-direction: column;
     }
 }
+
+/* ---------- Introduction ---------- */
 
 .intro-container {
     width: 80%;
@@ -148,20 +173,31 @@ body {
 
 @media only screen and (max-width: 650px) {
     .intro-container {
-        margin-bottom: 64px;
+        margin-bottom: 48px;
+    }
+
+    .intro-line {
+        width: 24px;
+    }
+
+    .intro-description {
+        padding-left: 24px;
     }
 }
+
+/* ---------- Print ---------- */
 
 .print-container {
     display: flex;
     align-items: flex-start;
+    /* justify-content: center; */
     width: 96%;
     margin: auto;
     margin-bottom: 96px;
 }
 
 .print-image {
-    max-height: 80vh;
+    max-height: 90vh;
     max-width: 60%;
     border: 4px solid;
 }
@@ -169,13 +205,20 @@ body {
 .print-description {
     padding-top: 12px;
     padding-left: 48px;
+    align-self: flex-end;
 }
 
 @media only screen and (max-width: 650px) {
+    .print-container {
+        margin-bottom: 48px;
+    }
+
     .print-description {
         padding-left: 12px;
     }
 }
+
+/* ---------- Footer ---------- */
 
 .footer-container {
     height: 200px;
