@@ -88,7 +88,6 @@ img {
     .strong {
         font-size: 18px;
     }
-
     .strong .social-link {
         font-size: 18px;
     }
@@ -115,7 +114,6 @@ img {
     .header {
         font-size: 24px;
     }
-
     .text {
         font-size: 12px;
     }
@@ -162,7 +160,7 @@ img {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .title-container {
         flex-direction: column;
         margin-bottom: 24px;
@@ -222,7 +220,6 @@ img {
     flex-grow: 1;
     align-items: center;
     justify-content: center;
-
 }
 
 .arrow {
@@ -233,12 +230,12 @@ img {
     margin-bottom: 12px;
     width: 12px;
     height: 12px;
-  }
+}
 
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-  }
+}
 
 /* ---------- Print ---------- */
 
@@ -265,7 +262,7 @@ img {
     .print-container {
         margin-bottom: 48px;
     }
-
+    
     .print-description {
         padding-left: 12px;
     }
