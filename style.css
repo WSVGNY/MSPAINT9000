@@ -92,7 +92,17 @@ body {
     color: white;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 320px) {
+    .strong {
+        font-size: 4.8vw;
+    }
+
+    .strong .social-link {
+        font-size: 4.8vw;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 650px) {
     .strong {
         font-size: 5.9vw;
     }
@@ -142,7 +152,7 @@ body {
 
 @media only screen and (max-width: 320px) {
     .landing-container {
-        height: calc(100vh - 32px);
+        height: calc(100vh - 64px);
     }
 }
 
@@ -233,7 +243,7 @@ img {
 
 @media only screen and (max-width: 650px) {
     .intro-container {
-        width: 80%;
+        width: 90%;
     }
 
     .intro-line {
