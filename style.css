@@ -247,14 +247,14 @@ img {
     }
 
     .intro-line {
-        width: 0px;
-        /* width: 24px; */
+        /* width: 0px; */
+        width: 24px;
     }
 
     .intro-description {
-        text-align: center;
-        padding-left: 0px;
-        /* padding-left: 24px; */
+        /* text-align: center; */
+        /* padding-left: 0px; */
+        padding-left: 24px;
     }
 }
 
