@@ -140,6 +140,12 @@ body {
     margin-bottom: 64px;
 }
 
+@media only screen and (max-width: 320px) {
+    .landing-container {
+        height: calc(100vh - 32px);
+    }
+}
+
 @media only screen and (max-width: 650px) {
     .landing-container {
         margin-bottom: 24px;
@@ -210,18 +216,35 @@ img {
     margin-top: 10vh;
 }
 
+@media only screen and (max-width: 320px) {
+    .intro-image {
+        width: 42vw;
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 650px) {
+    .intro-image {
+        width: 50vw;
+        /* margin-top: 6vh; */
+        margin-top: 0px;
+    }
+}
+
 @media only screen and (max-width: 650px) {
+    .intro-container {
+        width: 80%;
+    }
+
     .intro-line {
-        width: 24px;
+        width: 0px;
+        /* width: 24px; */
     }
 
     .intro-description {
-        padding-left: 24px;
-    }
-
-    .intro-image {
-        width: 50vw;
-        margin-top: 6vh;
+        text-align: center;
+        padding-left: 0px;
+        /* padding-left: 24px; */
     }
 }
 
