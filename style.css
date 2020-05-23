@@ -282,6 +282,11 @@ img {
     .arrow-container {
         margin-bottom: 24px;
     }
+
+    .arrow {
+        width: 6px;
+        height: 6px;
+    }
 }
 
 /* ---------- Print ---------- */
