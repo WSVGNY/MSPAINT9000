@@ -261,7 +261,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2vh;
+    margin-bottom: 32px;
 }
 
 .arrow {
@@ -271,7 +271,6 @@ img {
     padding: 2px;
     width: 12px;
     height: 12px;
-    margin-bottom: 32px;
 }
 
 .down {
