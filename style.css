@@ -44,12 +44,10 @@ body {
 
 @media only screen and (max-width: 650px) {
     .title {
-        /* font-size: 32px; */
         font-size: 8vw;
     }
 
     .title-highlight {
-        /* font-size: 18px; */
         font-size: 5.9vw;
     }
 }
@@ -76,14 +74,12 @@ body {
 
 .strong {
     color: white;
-    /* font-size: 2.8vw; */
     font-size: 2.4vw;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .strong .social-link {
     color: #5f85db;
-    /* font-size: 2.8vw; */
     font-size: 2.4vw;
     text-decoration: underline;
     margin: 0;
@@ -137,7 +133,9 @@ body {
     }
 
     .text {
-        font-size: 2.8vw;
+        /* font-size: 2.8vw; */
+        font-size: 3vw;
+
     }
 }
 
@@ -154,7 +152,8 @@ body {
 
 @media only screen and (max-width: 650px) {
     .landing-container {
-        height: calc(100vh - 64px);
+        height: unset;
+        /* height: calc(100vh - 64px); */
         margin-bottom: 24px;
     }
 }
@@ -241,7 +240,7 @@ img {
     .intro-image {
         width: 36vw;
         max-width: unset;
-        margin-top: 6vh;
+        /* margin-top: 6vh; */
     }
 }
 
@@ -270,12 +269,17 @@ img {
 
 @media only screen and (max-width: 650px) {
     .arrow-container {
-        margin-bottom: 24px;
+        visibility: hidden;
+        height: 0px;
+        margin-bottom: 0px;
+        /* margin-bottom: 24px; */
     }
 
     .arrow {
-        width: 6px;
-        height: 6px;
+        width: 0px;
+        height: 0px;
+        /* width: 6px; */
+        /* height: 6px; */
     }
 }
 
@@ -287,6 +291,10 @@ img {
     width: 96%;
     margin: auto;
     margin-bottom: 96px;
+}
+
+.print-title-wrapper {
+    width: auto;
 }
 
 .print-image {
@@ -302,11 +310,24 @@ img {
 
 @media only screen and (max-width: 650px) {
     .print-container {
+        flex-direction: column;
+        align-items: center;
         margin-bottom: 48px;
+    }
+
+    .print-title-wrapper {
+        width: fit-content;
+    }
+
+    .print-image {
+        max-height: 90vh;
+        max-width: 100%;
     }
     
     .print-description {
+        /* padding-left: 0px; */
         padding-left: 12px;
+        align-self: flex-start;
     }
 }
 
