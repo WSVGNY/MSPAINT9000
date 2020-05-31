@@ -230,17 +230,22 @@ img {
     }
 
     .intro-line {
-        width: 24px;
+        /* width: 24px; */
+        width: 0px;
+        visibility: hidden;
     }
 
     .intro-description {
-        padding-left: 24px;
+        text-align: center;
+        padding-left: 0px;
+        /* padding-left: 24px; */
     }
 
     .intro-image {
-        width: 36vw;
+        width: 60vw;
         max-width: unset;
-        /* margin-top: 6vh; */
+        margin-top: 6vh;
+        margin-bottom: 6vh;
     }
 }
 
