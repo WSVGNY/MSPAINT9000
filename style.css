@@ -97,10 +97,19 @@ body {
     color: white;
 }
 
+@media only screen and (min-width: 651px) and (max-width: 1200px) {
+    .strong {
+        font-size: 3.2vw;
+    }
+
+    .strong .social-link {
+        font-size: 3.2vw;
+    }
+}
+
 
 @media only screen and (max-width: 650px) {
     .strong {
-        /* font-size: 5.2vw; */
         font-size: 6.2vw;
         margin: 0;
         margin-bottom: 24px;
@@ -108,7 +117,6 @@ body {
     }
 
     .strong .social-link {
-        /* font-size: 5.2vw; */
         font-size: 6.2vw;
         margin: 0;
         margin-bottom: 24px;
