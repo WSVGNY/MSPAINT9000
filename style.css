@@ -241,11 +241,10 @@ img {
     }
 
     .intro-line {
-        /* width: 0px; */
-        /* visibility: hidden; */
         margin-top: auto;
         width: 12px;
-        height: 52vw;
+        height: 48vw;
+        max-height: 260px;
     }
 
     .intro-description {
